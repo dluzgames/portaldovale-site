@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portal do Vale Supermercado — Ofertas da Semana no Milena I | Paraíso do Tocantins</title>
-  <meta name="description" content="Encarte da semana e ofertas do Portal do Vale Supermercado em Paraíso do Tocantins. Açougue com carnes nobres, padaria artesanal, hortifruti fresco e mercearia completa. Av. Bernardo Sayão, 2164.">
+  <title>Portal do Vale Supermercado — Ofertas & Tradição no Milena I | Paraíso do Tocantins</title>
+  <meta name="description" content="Portal do Vale Supermercado em Paraíso do Tocantins. Açougue com carnes nobres selecionadas, padaria artesanal com pão quente todo dia, hortifruti fresco e mercearia completa. Av. Bernardo Sayão, 2164.">
   
   <!-- Favicon -->
   <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Portal do Vale Supermercado — Ofertas da Semana no Milena I">
-  <meta property="og:description" content="Confira o tabloide digital com preços especiais em carnes, hortifruti, padaria e monte sua lista de compras direto pro WhatsApp!">
+  <meta property="og:title" content="Portal do Vale Supermercado — Milena I | Paraíso do Tocantins">
+  <meta property="og:description" content="O supermercado da sua família em Paraíso. Carnes selecionadas, padaria com fornadas diárias e hortifruti fresquinho.">
   <meta property="og:image" content="assets/logo.jpg">
   <meta property="og:type" content="website">
 
-  <!-- Google Fonts: Plus Jakarta Sans -->
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
@@ -52,34 +52,8 @@
 
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
-
-  <style>
-    /* Estilos personalizados para o padrão de supermercado */
-    .price-tag {
-      font-feature-settings: "tnum";
-      font-variant-numeric: tabular-nums;
-    }
-    .badge-ribbon {
-      clip-path: polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%);
-    }
-    .scrollbar-hide::-webkit-scrollbar {
-      display: none;
-    }
-    .scrollbar-hide {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-    /* Pulse glow */
-    @keyframes pulse-soft {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.85; transform: scale(1.02); }
-    }
-    .pulse-badge {
-      animation: pulse-soft 2.5s infinite ease-in-out;
-    }
-  </style>
 </head>
-<body class="bg-[#F8FAFC] text-slate-800 font-sans antialiased selection:bg-brand-emerald selection:text-white pb-24 md:pb-0">
+<body class="bg-[#F8FAFC] text-slate-800 font-sans antialiased selection:bg-brand-emerald selection:text-white">
 
   <!-- TOP BAR DE ANÚNCIOS -->
   <div class="bg-brand-navy text-white text-xs py-2 px-4 border-b border-white/10">
@@ -119,33 +93,25 @@
 
       <!-- NAVEGAÇÃO DESKTOP -->
       <nav class="hidden md:flex items-center gap-1 lg:gap-2 font-semibold text-sm text-slate-600">
-        <a href="#encarte" class="px-3.5 py-2 rounded-lg hover:text-brand-blue hover:bg-slate-100 transition flex items-center gap-1.5">
-          <i data-lucide="tag" class="w-4 h-4 text-brand-emerald"></i> Encarte Digital
-        </a>
         <a href="#dias-tematicos" class="px-3.5 py-2 rounded-lg hover:text-brand-blue hover:bg-slate-100 transition flex items-center gap-1.5">
           <i data-lucide="calendar" class="w-4 h-4 text-brand-amber"></i> Dias de Ofertas
         </a>
         <a href="#setores" class="px-3.5 py-2 rounded-lg hover:text-brand-blue hover:bg-slate-100 transition flex items-center gap-1.5">
-          <i data-lucide="store" class="w-4 h-4 text-brand-blue"></i> Setores
+          <i data-lucide="store" class="w-4 h-4 text-brand-blue"></i> Nossos Setores
+        </a>
+        <a href="#vip" class="px-3.5 py-2 rounded-lg hover:text-brand-blue hover:bg-slate-100 transition flex items-center gap-1.5">
+          <i data-lucide="bell" class="w-4 h-4 text-brand-emerald"></i> Encarte no WhatsApp
         </a>
         <a href="#localizacao" class="px-3.5 py-2 rounded-lg hover:text-brand-blue hover:bg-slate-100 transition flex items-center gap-1.5">
           <i data-lucide="map-pin" class="w-4 h-4 text-brand-red"></i> Como Chegar
         </a>
       </nav>
 
-      <!-- AÇÕES (CARRINHO / LISTA & WHATSAPP) -->
+      <!-- BOTÃO WHATSAPP DIRETO -->
       <div class="flex items-center gap-3">
-        <!-- BOTÃO ABRIR LISTA DE COMPRAS -->
-        <button onclick="toggleCartDrawer()" class="relative p-2.5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-slate-100 text-slate-700 transition flex items-center gap-2 group" title="Sua Lista de Compras">
-          <i data-lucide="shopping-basket" class="w-5 h-5 text-brand-emerald group-hover:scale-110 transition"></i>
-          <span class="hidden sm:inline text-xs font-bold">Minha Lista</span>
-          <span id="headerCartCount" class="bg-brand-red text-white text-[11px] font-extrabold w-5 h-5 rounded-full flex items-center justify-center">0</span>
-        </button>
-
-        <!-- BOTÃO WHATSAPP DIRETO -->
-        <a href="https://wa.me/5563992121214?text=Ol%C3%A1%20Portal%20do%20Vale!%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20com%20o%20atendimento." target="_blank" class="hidden sm:inline-flex items-center gap-2 bg-brand-emerald hover:bg-emerald-700 text-white px-4 py-2.5 rounded-xl font-bold text-sm shadow-sm shadow-emerald-500/20 hover:shadow-md transition">
+        <a href="https://wa.me/5563992121214?text=Ol%C3%A1%20Portal%20do%20Vale!%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20com%20o%20atendimento." target="_blank" class="inline-flex items-center gap-2 bg-brand-emerald hover:bg-emerald-700 text-white px-5 py-2.5 rounded-xl font-bold text-sm shadow-sm shadow-emerald-500/20 hover:shadow-md transition">
           <i data-lucide="message-circle" class="w-4 h-4"></i>
-          <span>WhatsApp Loja</span>
+          <span>Falar no WhatsApp</span>
         </a>
       </div>
     </div>
@@ -161,7 +127,7 @@
           
           <div class="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200/80 px-3.5 py-1.5 rounded-full text-xs font-bold text-emerald-800 shadow-sm">
             <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
-            <span>Tabloide Semanal de Ofertas Disponível</span>
+            <span>Tradição & Economia no Residencial Milena I</span>
           </div>
 
           <h1 class="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-brand-navy leading-tight tracking-tight">
@@ -180,7 +146,7 @@
               </div>
               <div>
                 <h4 class="text-xs font-bold text-slate-900 leading-tight">Açougue Próprio</h4>
-                <p class="text-[11px] text-slate-500">Cortes na hora</p>
+                <p class="text-[11px] text-slate-500">Cortes nobres e limpos</p>
               </div>
             </div>
 
@@ -200,20 +166,20 @@
               </div>
               <div>
                 <h4 class="text-xs font-bold text-slate-900 leading-tight">Hortifruti Fresco</h4>
-                <p class="text-[11px] text-slate-500">Direto do campo</p>
+                <p class="text-[11px] text-slate-500">Direto da horta</p>
               </div>
             </div>
           </div>
 
           <!-- BOTÕES DE AÇÃO HERO -->
           <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
-            <a href="#encarte" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-emerald hover:bg-emerald-700 text-white font-bold text-base px-7 py-3.5 rounded-xl shadow-lg shadow-emerald-600/25 hover:shadow-xl transition transform hover:-translate-y-0.5">
-              <i data-lucide="newspaper" class="w-5 h-5"></i>
-              <span>Ver Encarte da Semana</span>
+            <a href="#dias-tematicos" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-emerald hover:bg-emerald-700 text-white font-bold text-base px-7 py-3.5 rounded-xl shadow-lg shadow-emerald-600/25 hover:shadow-xl transition transform hover:-translate-y-0.5">
+              <i data-lucide="calendar" class="w-5 h-5"></i>
+              <span>Ver Dias de Ofertas</span>
             </a>
             <a href="https://wa.me/5563992121214?text=Ol%C3%A1%20Portal%20do%20Vale!%20Gostaria%20de%20receber%20o%20encarte%20de%20ofertas%20da%20semana%20no%20meu%20WhatsApp." target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 font-bold text-base px-6 py-3.5 rounded-xl shadow-sm hover:shadow transition">
               <i data-lucide="bell" class="w-5 h-5 text-brand-amber"></i>
-              <span>Receber Ofertas no WhatsApp</span>
+              <span>Receber Encarte no WhatsApp</span>
             </a>
           </div>
 
@@ -257,22 +223,22 @@
                 <div class="flex items-center justify-between pb-3">
                   <div class="flex items-center gap-2.5">
                     <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-sm">
-                      %
+                      <i data-lucide="store" class="w-4 h-4"></i>
                     </div>
                     <div>
-                      <p class="text-xs font-bold text-slate-800">Economia Garantida</p>
-                      <p class="text-[11px] text-slate-500">Mais de 15 ofertas ativas hoje</p>
+                      <p class="text-xs font-bold text-slate-800">Estrutura Completa</p>
+                      <p class="text-[11px] text-slate-500">Açougue, Hortifruti, Padaria e Mercearia</p>
                     </div>
                   </div>
-                  <a href="#encarte" class="text-xs font-bold text-brand-emerald hover:underline flex items-center gap-1">
-                    Conferir <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+                  <a href="#setores" class="text-xs font-bold text-brand-emerald hover:underline flex items-center gap-1">
+                    Conhecer <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
                   </a>
                 </div>
 
                 <div class="flex items-center justify-between pt-3 text-xs text-slate-600">
                   <span class="flex items-center gap-1.5">
                     <i data-lucide="clock" class="w-4 h-4 text-brand-blue"></i>
-                    Horário: <strong>07:00 às 20:00</strong>
+                    Funcionamento: <strong>07:00 às 20:00</strong>
                   </span>
                   <span class="font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">
                     Hoje tem Fornada!
@@ -288,7 +254,7 @@
     </div>
   </section>
 
-  <!-- SEÇÃO CALENDÁRIO DE OFERTAS DA SEMANA (FORMATO SUPERMERCADO CLÁSSICO) -->
+  <!-- SEÇÃO CALENDÁRIO DE OFERTAS DA SEMANA -->
   <section id="dias-tematicos" class="py-14 bg-white border-y border-slate-200/80">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -316,10 +282,10 @@
           </span>
           <h3 class="font-heading font-bold text-lg text-slate-900 mt-2">Feirinha do Hortifruti</h3>
           <p class="text-xs text-slate-600 mt-1 leading-relaxed">
-            Frutas selecionadas, verduras frescas e legumes com preço de atacado e reposição diária direto do produtor.
+            Frutas selecionadas, verduras frescas e legumes com preço baixo e reposição diária direto do produtor.
           </p>
           <div class="mt-4 pt-3 border-t border-emerald-100 flex items-center justify-between text-xs text-emerald-800 font-semibold">
-            <span>Tomate, Batata, Frutas</span>
+            <span>Tomate, Batata, Frutas da Época</span>
             <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
           </div>
         </div>
@@ -383,86 +349,8 @@
     </div>
   </section>
 
-  <!-- TABLOIDE / ENCARTE DIGITAL INTERATIVO (A GRANDE ESTRELA DO SITE) -->
-  <section id="encarte" class="py-14 bg-[#F8FAFC]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <!-- CABEÇALHO DO ENCARTE -->
-      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
-        <div>
-          <div class="inline-flex items-center gap-1.5 text-xs font-bold text-red-600 bg-red-100 px-3 py-1 rounded-full uppercase tracking-wider">
-            <i data-lucide="badge-percent" class="w-4 h-4"></i> Encarte da Semana
-          </div>
-          <h2 class="font-heading font-black text-2xl sm:text-3xl text-brand-navy mt-2">
-            Ofertas Válidas no Supermercado
-          </h2>
-          <p class="text-slate-600 text-sm mt-1">
-            Clique em <strong>"+ Adicionar à Lista"</strong> para montar suas compras e enviar pro WhatsApp da loja!
-          </p>
-        </div>
-
-        <!-- BUSCA RÁPIDA DE ITENS NO TABLOIDE -->
-        <div class="relative w-full md:w-72">
-          <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
-          <input type="text" id="searchInput" oninput="filterProducts()" placeholder="Buscar produto no encarte..." class="w-full pl-9 pr-3 py-2.5 text-xs rounded-xl border border-slate-300 bg-white focus:outline-none focus:ring-2 focus:ring-brand-emerald focus:border-emerald-500 shadow-sm transition">
-        </div>
-      </div>
-
-      <!-- CHIPS DE FILTRO DE DEPARTAMENTOS -->
-      <div class="flex items-center gap-2 overflow-x-auto pb-4 scrollbar-hide mb-6 text-xs font-bold">
-        <button onclick="setCategory('todos', this)" class="cat-chip active px-4 py-2 rounded-xl bg-brand-navy text-white shadow-sm transition whitespace-nowrap">
-          Todos os Produtos
-        </button>
-        <button onclick="setCategory('acougue', this)" class="cat-chip px-4 py-2 rounded-xl bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition whitespace-nowrap">
-          🥩 Açougue & Carnes
-        </button>
-        <button onclick="setCategory('hortifruti', this)" class="cat-chip px-4 py-2 rounded-xl bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition whitespace-nowrap">
-          🥦 Hortifruti
-        </button>
-        <button onclick="setCategory('padaria', this)" class="cat-chip px-4 py-2 rounded-xl bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition whitespace-nowrap">
-          🥖 Padaria & Confeitaria
-        </button>
-        <button onclick="setCategory('frios', this)" class="cat-chip px-4 py-2 rounded-xl bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition whitespace-nowrap">
-          🧀 Frios & Laticínios
-        </button>
-        <button onclick="setCategory('mercearia', this)" class="cat-chip px-4 py-2 rounded-xl bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition whitespace-nowrap">
-          🍚 Mercearia & Básicos
-        </button>
-        <button onclick="setCategory('bebidas', this)" class="cat-chip px-4 py-2 rounded-xl bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition whitespace-nowrap">
-          🥤 Bebidas
-        </button>
-      </div>
-
-      <!-- GRID DE CARDS DO TABLOIDE -->
-      <div id="productsGrid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-        <!-- RENDERIZADO VIA JAVASCRIPT -->
-      </div>
-
-      <!-- BANNER DE ENCARTE EM PDF / WHATSAPP -->
-      <div class="mt-12 bg-gradient-to-r from-brand-navy via-brand-blue to-brand-navy rounded-2xl p-6 sm:p-8 text-white shadow-xl relative overflow-hidden">
-        <div class="absolute right-0 top-0 bottom-0 w-1/3 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-emerald-500/20 via-transparent to-transparent pointer-events-none"></div>
-        <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
-          <div class="space-y-2">
-            <span class="inline-flex items-center gap-1.5 bg-brand-emerald text-white text-xs font-bold px-3 py-1 rounded-full uppercase">
-              <i data-lucide="check-circle" class="w-3.5 h-3.5"></i> Lista VIP WhatsApp
-            </span>
-            <h3 class="font-heading font-black text-2xl text-white">Quer receber o encarte novo toda semana?</h3>
-            <p class="text-sm text-slate-300 max-w-xl">
-              Entre para a lista do Portal do Vale no WhatsApp e receba os preços baixos direto no seu celular antes de todo mundo!
-            </p>
-          </div>
-          <a href="https://wa.me/5563992121214?text=Ol%C3%A1%20Portal%20do%20Vale!%20Quero%20entrar%20na%20lista%20VIP%20e%20receber%20os%20encartes%20da%20semana." target="_blank" class="shrink-0 inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold px-6 py-3.5 rounded-xl shadow-lg shadow-emerald-500/30 transition transform hover:scale-105">
-            <i data-lucide="message-circle" class="w-5 h-5"></i>
-            <span>Cadastrar Meu WhatsApp</span>
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
   <!-- DEPARTAMENTOS & DIFERENCIAIS -->
-  <section id="setores" class="py-14 bg-white border-t border-slate-200/80">
+  <section id="setores" class="py-14 bg-[#F8FAFC]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-2xl mx-auto mb-12">
@@ -480,8 +368,8 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         
         <!-- CARD PADARIA -->
-        <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
-          <div class="h-44 overflow-hidden relative">
+        <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
+          <div class="h-48 overflow-hidden relative">
             <img src="assets/padaria.jpg" alt="Padaria Portal do Vale" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
             <span class="absolute bottom-3 left-3 bg-amber-500 text-white text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-md">
@@ -491,15 +379,15 @@
           <div class="p-5">
             <h3 class="font-heading font-bold text-lg text-slate-900">Padaria & Confeitaria</h3>
             <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-              Pães quentinhos assados várias vezes ao dia, bolos confeitados, roscas, salgados e biscoitos crocantes feitos aqui mesmo.
+              Pães quentinhos assados várias vezes ao dia, bolos caseiros, roscas doces, salgados e biscoitos crocantes preparados diariamente.
             </p>
           </div>
         </div>
 
-        <!-- CARD AÇOUGUE -->
-        <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
-          <div class="h-44 overflow-hidden relative">
-            <img src="assets/acougue.jpg" alt="Açougue Portal do Vale" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+        <!-- CARD AÇOUGUE (FOTO REAL DE CARNES) -->
+        <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
+          <div class="h-48 overflow-hidden relative">
+            <img src="assets/acougue.jpg" alt="Açougue Completo - Cortes Nobres" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
             <span class="absolute bottom-3 left-3 bg-red-600 text-white text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-md">
               Cortes Nobres
@@ -508,14 +396,14 @@
           <div class="p-5">
             <h3 class="font-heading font-bold text-lg text-slate-900">Açougue Completo</h3>
             <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-              Carnes bovinas, suínas e aves selecionadas com higiene máxima. Moída na hora e fatiada na espessura que você preferir.
+              Carnes bovinas, suínas e aves selecionadas com higiene máxima. Picanha, costela, bife na medida e carne moída fresca na hora.
             </p>
           </div>
         </div>
 
         <!-- CARD HORTIFRUTI -->
-        <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
-          <div class="h-44 overflow-hidden relative">
+        <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
+          <div class="h-48 overflow-hidden relative">
             <img src="assets/hortifruti.jpg" alt="Hortifruti Portal do Vale" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
             <span class="absolute bottom-3 left-3 bg-emerald-600 text-white text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-md">
@@ -531,8 +419,8 @@
         </div>
 
         <!-- CARD BEBIDAS & MERCEARIA -->
-        <div class="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
-          <div class="h-44 overflow-hidden relative">
+        <div class="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
+          <div class="h-48 overflow-hidden relative">
             <img src="assets/bebidas.jpg" alt="Bebidas e Frios Portal do Vale" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
             <span class="absolute bottom-3 left-3 bg-blue-600 text-white text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-md">
@@ -549,6 +437,30 @@
 
       </div>
 
+    </div>
+  </section>
+
+  <!-- BANNER DE ENCARTE NO WHATSAPP (CAPTURA VIP) -->
+  <section id="vip" class="py-12 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-gradient-to-r from-brand-navy via-brand-blue to-brand-navy rounded-3xl p-8 sm:p-12 text-white shadow-xl relative overflow-hidden">
+        <div class="absolute right-0 top-0 bottom-0 w-1/3 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-emerald-500/20 via-transparent to-transparent pointer-events-none"></div>
+        <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+          <div class="space-y-3">
+            <span class="inline-flex items-center gap-1.5 bg-brand-emerald text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+              <i data-lucide="bell" class="w-3.5 h-3.5"></i> Lista VIP no WhatsApp
+            </span>
+            <h3 class="font-heading font-black text-2xl sm:text-3xl text-white">Quer receber o encarte de ofertas toda semana?</h3>
+            <p class="text-sm sm:text-base text-slate-300 max-w-xl leading-relaxed">
+              Mande uma mensagem para o nosso WhatsApp e receba os preços do dia, dias temáticos e promoções especiais direto no seu celular antes de todo mundo!
+            </p>
+          </div>
+          <a href="https://wa.me/5563992121214?text=Ol%C3%A1%20Portal%20do%20Vale!%20Quero%20entrar%20na%20lista%20VIP%20e%20receber%20os%20encartes%20da%20semana." target="_blank" class="shrink-0 inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold px-8 py-4 rounded-xl shadow-lg shadow-emerald-500/30 transition transform hover:scale-105 text-base">
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+            <span>Receber Encarte no WhatsApp</span>
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -602,7 +514,7 @@
                 </div>
                 <div>
                   <h4 class="font-bold text-slate-900">Canais de Atendimento</h4>
-                  <p class="text-slate-600 text-xs mt-0.5">WhatsApp / Pedidos: <strong>(63) 99212-1214</strong></p>
+                  <p class="text-slate-600 text-xs mt-0.5">WhatsApp Oficial: <strong>(63) 99212-1214</strong></p>
                   <p class="text-slate-600 text-xs">Telefone Fixo da Loja: <strong>(63) 3142-3425</strong></p>
                 </div>
               </div>
@@ -628,7 +540,7 @@
               </div>
               <h3 class="font-heading font-black text-xl text-brand-navy">Portal do Vale Supermercado</h3>
               <p class="text-xs text-slate-500 leading-relaxed">
-                Venha fazer suas compras com tranquilidade, carrinhos limpos, espaço climatizado e o atendimento atencioso que sua família merece.
+                Venha fazer suas compras com tranquilidade, carrinhos limpos, espaço amplo e o atendimento atencioso que sua família merece.
               </p>
               
               <div class="bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm text-xs space-y-2 text-left">
@@ -648,7 +560,7 @@
 
               <div class="pt-2">
                 <span class="inline-block text-[11px] font-bold text-emerald-800 bg-emerald-100/80 px-3 py-1 rounded-full">
-                  Próximo a vias rápidas e fácil para estacionar
+                  Fácil acesso com estacionamento amplo
                 </span>
               </div>
             </div>
@@ -700,7 +612,7 @@
 
         <div>
           <h5 class="font-bold text-white mb-2">Projeto Digital</h5>
-          <p>Demonstração interativa desenvolvida com tecnologia de alta conversão.</p>
+          <p>Demonstração desenvolvida com tecnologia de alta performance.</p>
           <p class="text-slate-300 font-semibold mt-1">
             DLuz Digital • Agência de Marketing Digital em Paraíso do Tocantins
           </p>
@@ -713,548 +625,14 @@
       </div>
 
       <div class="pt-6 border-t border-white/10 text-center text-[11px] text-slate-500">
-        <p>© 2026 Portal do Vale Supermercado Ltda. Todos os direitos reservados. Fotos meramente ilustrativas para demonstração do encarte digital.</p>
+        <p>© 2026 Portal do Vale Supermercado Ltda. Todos os direitos reservados.</p>
       </div>
 
     </div>
   </footer>
 
-  <!-- BARRA FLUTUANTE DA LISTA DE COMPRAS (MOBILE E DESKTOP) -->
-  <div id="floatingCartBar" class="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-slate-200 shadow-2xl p-3 sm:p-4 transform translate-y-full transition-transform duration-300 ease-out">
-    <div class="max-w-4xl mx-auto flex items-center justify-between gap-3">
-      <div class="flex items-center gap-3">
-        <div class="relative w-11 h-11 rounded-xl bg-emerald-100 text-brand-emerald flex items-center justify-center font-bold">
-          <i data-lucide="shopping-basket" class="w-6 h-6"></i>
-          <span id="floatingCartBadge" class="absolute -top-1.5 -right-1.5 bg-red-600 text-white text-[10px] font-extrabold w-5 h-5 rounded-full flex items-center justify-center">0</span>
-        </div>
-        <div>
-          <p class="text-xs font-bold text-slate-800">
-            <span id="floatingCartItemsText">0 itens na sua lista</span>
-          </p>
-          <p class="text-[11px] text-slate-500">
-            Total Estimado: <strong id="floatingCartTotal" class="text-brand-emerald text-sm">R$ 0,00</strong>
-          </p>
-        </div>
-      </div>
-
-      <button onclick="toggleCartDrawer()" class="inline-flex items-center gap-2 bg-brand-emerald hover:bg-emerald-700 text-white font-extrabold text-xs sm:text-sm px-5 py-2.5 rounded-xl shadow-md shadow-emerald-600/20 transition">
-        <span>Abrir Lista & Enviar</span>
-        <i data-lucide="arrow-right" class="w-4 h-4"></i>
-      </button>
-    </div>
-  </div>
-
-  <!-- DRAWER / MODAL DA LISTA DE COMPRAS -->
-  <div id="cartDrawerBackdrop" onclick="toggleCartDrawer()" class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300"></div>
-
-  <div id="cartDrawer" class="fixed top-0 right-0 bottom-0 z-50 w-full max-w-md bg-white shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
-    <!-- Header do Drawer -->
-    <div class="p-4 sm:p-5 border-b border-slate-200 flex items-center justify-between bg-slate-50">
-      <div class="flex items-center gap-2.5">
-        <div class="w-9 h-9 rounded-xl bg-emerald-100 text-brand-emerald flex items-center justify-center">
-          <i data-lucide="shopping-basket" class="w-5 h-5"></i>
-        </div>
-        <div>
-          <h3 class="font-heading font-bold text-base text-slate-900 leading-tight">Minha Lista de Compras</h3>
-          <p class="text-xs text-slate-500">Portal do Vale Supermercado</p>
-        </div>
-      </div>
-      <button onclick="toggleCartDrawer()" class="p-2 rounded-lg text-slate-400 hover:text-slate-600 hover:bg-slate-200 transition">
-        <i data-lucide="x" class="w-5 h-5"></i>
-      </button>
-    </div>
-
-    <!-- Lista de Itens Adicionados -->
-    <div id="cartItemsList" class="flex-1 overflow-y-auto p-4 sm:p-5 space-y-3">
-      <!-- Se vazio -->
-      <div id="emptyCartMessage" class="text-center py-16 space-y-3">
-        <div class="w-16 h-16 rounded-full bg-slate-100 text-slate-300 flex items-center justify-center mx-auto">
-          <i data-lucide="shopping-cart" class="w-8 h-8"></i>
-        </div>
-        <h4 class="font-bold text-slate-700 text-sm">Sua lista está vazia</h4>
-        <p class="text-xs text-slate-500 max-w-xs mx-auto">
-          Navegue pelas ofertas do encarte acima e clique em "+ Adicionar à Lista" para montar seu pedido.
-        </p>
-      </div>
-    </div>
-
-    <!-- Campo para Adicionar Item Extra Avulso -->
-    <div class="px-4 sm:px-5 py-3 bg-slate-50 border-t border-slate-200 space-y-2">
-      <label class="text-[11px] font-bold text-slate-600 uppercase tracking-wide">Quer adicionar outro produto à lista?</label>
-      <div class="flex gap-2">
-        <input type="text" id="customItemInput" placeholder="Ex: 1 pacote de Café Pilão 500g" class="flex-1 px-3 py-2 text-xs rounded-lg border border-slate-300 bg-white focus:outline-none focus:ring-1 focus:ring-emerald-500">
-        <button onclick="addCustomItem()" class="bg-brand-navy hover:bg-slate-900 text-white font-bold text-xs px-3 py-2 rounded-lg transition">
-          + Inserir
-        </button>
-      </div>
-    </div>
-
-    <!-- Rodapé do Drawer com Total e Envio WhatsApp -->
-    <div class="p-4 sm:p-5 border-t border-slate-200 bg-white space-y-3">
-      <div class="flex items-center justify-between text-sm">
-        <span class="text-slate-500">Subtotal Estimado:</span>
-        <span id="drawerTotal" class="font-heading font-black text-xl text-brand-navy">R$ 0,00</span>
-      </div>
-      <p class="text-[11px] text-slate-400">
-        *Preços sujeitos à conferência de estoque e pesagem na balança.
-      </p>
-
-      <button onclick="sendOrderToWhatsApp()" class="w-full inline-flex items-center justify-center gap-2 bg-brand-emerald hover:bg-emerald-700 text-white font-extrabold text-sm py-3.5 rounded-xl shadow-lg shadow-emerald-600/25 transition">
-        <i data-lucide="message-circle" class="w-5 h-5"></i>
-        <span>Enviar Lista para o WhatsApp</span>
-      </button>
-
-      <button onclick="clearCart()" class="w-full text-center text-xs text-slate-400 hover:text-red-500 font-semibold transition py-1">
-        Limpar Lista
-      </button>
-    </div>
-  </div>
-
-  <!-- JAVASCRIPT: LÓGICA DO TABLOIDE E LISTA DE COMPRAS -->
   <script>
-    // CATÁLOGO DE OFERTAS DA SEMANA DO SUPERMERCADO
-    const PRODUCTS = [
-      // AÇOUGUE
-      {
-        id: 1,
-        name: "Picanha Bovina Fatiada",
-        unit: "Peça a vácuo / Kg",
-        category: "acougue",
-        priceOld: 59.90,
-        price: 49.90,
-        badge: "Oferta da Semana",
-        img: "assets/acougue.jpg"
-      },
-      {
-        id: 2,
-        name: "Costela Bovina Gaúcha",
-        unit: "Corte para churrasco / Kg",
-        category: "acougue",
-        priceOld: 29.90,
-        price: 24.90,
-        badge: "Churrasco",
-        img: "assets/acougue.jpg"
-      },
-      {
-        id: 3,
-        name: "Coxa e Sobrecoxa de Frango",
-        unit: "Resfriada / Kg",
-        category: "acougue",
-        priceOld: 11.50,
-        price: 8.99,
-        badge: "Economia Real",
-        img: "assets/acougue.jpg"
-      },
-
-      // HORTIFRUTI
-      {
-        id: 4,
-        name: "Tomate Longa Vida Selecionado",
-        unit: "Fruto fresco / Kg",
-        category: "hortifruti",
-        priceOld: 7.99,
-        price: 5.99,
-        badge: "Quarta do Horti",
-        img: "assets/hortifruti.jpg"
-      },
-      {
-        id: 5,
-        name: "Banana Prata Climatizada",
-        unit: "Doce da roça / Kg",
-        category: "hortifruti",
-        priceOld: 6.00,
-        price: 4.49,
-        badge: "Fresquinho",
-        img: "assets/hortifruti.jpg"
-      },
-      {
-        id: 6,
-        name: "Batata Inglesa Lavada",
-        unit: "Especial / Kg",
-        category: "hortifruti",
-        priceOld: 6.50,
-        price: 4.89,
-        badge: "Mais Vendido",
-        img: "assets/hortifruti.jpg"
-      },
-
-      // PADARIA
-      {
-        id: 7,
-        name: "Pão Francês Quentinho",
-        unit: "Fornadas de hora em hora / Kg",
-        category: "padaria",
-        priceOld: 14.50,
-        price: 12.90,
-        badge: "Fornada da Hora",
-        img: "assets/padaria.jpg"
-      },
-      {
-        id: 8,
-        name: "Bolo Caseiro de Cenoura",
-        unit: "Com cobertura de chocolate / Un",
-        category: "padaria",
-        priceOld: 18.00,
-        price: 14.90,
-        badge: "Produção Própria",
-        img: "assets/padaria.jpg"
-      },
-
-      // FRIOS E LATICÍNIOS
-      {
-        id: 9,
-        name: "Queijo Mussarela Fatiado",
-        unit: "Fatiado fininho na hora / 100g",
-        category: "frios",
-        priceOld: 5.20,
-        price: 4.29,
-        badge: "Super Fatiado",
-        img: "assets/frios.jpg"
-      },
-      {
-        id: 10,
-        name: "Presunto Cozido Especial",
-        unit: "Primeira qualidade / 100g",
-        category: "frios",
-        priceOld: 3.80,
-        price: 2.99,
-        badge: "Café da Manhã",
-        img: "assets/frios.jpg"
-      },
-
-      // MERCEARIA
-      {
-        id: 11,
-        name: "Arroz Branco Tipo 1 5Kg",
-        unit: "Grãos nobres / Pacote",
-        category: "mercearia",
-        priceOld: 32.90,
-        price: 27.90,
-        badge: "Cesta Básica",
-        img: "assets/hero_supermarket.jpg"
-      },
-      {
-        id: 12,
-        name: "Feijão Carioca Novo 1Kg",
-        unit: "Cozimento rápido / Pacote",
-        category: "mercearia",
-        priceOld: 8.50,
-        price: 6.99,
-        badge: "Básico da Mesa",
-        img: "assets/hero_supermarket.jpg"
-      },
-      {
-        id: 13,
-        name: "Óleo de Soja Refinado 900ml",
-        unit: "Garrafa pet",
-        category: "mercearia",
-        priceOld: 7.50,
-        price: 6.49,
-        badge: "Preço Baixo",
-        img: "assets/hero_supermarket.jpg"
-      },
-
-      // BEBIDAS
-      {
-        id: 14,
-        name: "Cerveja Heineken Puro Malte",
-        unit: "Lata 350ml / Unidade",
-        category: "bebidas",
-        priceOld: 6.29,
-        price: 5.49,
-        badge: "Gelada no Grau",
-        img: "assets/bebidas.jpg"
-      },
-      {
-        id: 15,
-        name: "Refrigerante Coca-Cola 2L",
-        unit: "Garrafa Pet Original",
-        category: "bebidas",
-        priceOld: 11.50,
-        price: 9.99,
-        badge: "Fim de Semana",
-        img: "assets/bebidas.jpg"
-      }
-    ];
-
-    // ESTADO DO CARRINHO / LISTA
-    let cart = [];
-    let currentCategory = 'todos';
-    let searchQuery = '';
-
-    // INICIALIZAÇÃO
-    window.addEventListener('DOMContentLoaded', () => {
-      lucide.createIcons();
-      renderProducts();
-    });
-
-    // RENDERIZAR PRODUTOS
-    function renderProducts() {
-      const grid = document.getElementById('productsGrid');
-      grid.innerHTML = '';
-
-      const filtered = PRODUCTS.filter(p => {
-        const matchesCat = (currentCategory === 'todos' || p.category === currentCategory);
-        const matchesSearch = p.name.toLowerCase().includes(searchQuery.toLowerCase()) || p.category.toLowerCase().includes(searchQuery.toLowerCase());
-        return matchesCat && matchesSearch;
-      });
-
-      if (filtered.length === 0) {
-        grid.innerHTML = `
-          <div class="col-span-full py-12 text-center text-slate-400">
-            <i data-lucide="package-search" class="w-10 h-10 mx-auto mb-2 text-slate-300"></i>
-            <p class="text-sm font-semibold">Nenhum produto encontrado nessa categoria ou busca.</p>
-          </div>
-        `;
-        lucide.createIcons();
-        return;
-      }
-
-      filtered.forEach(p => {
-        const inCart = cart.find(item => item.id === p.id);
-        const card = document.createElement('div');
-        card.className = "bg-white rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-md transition flex flex-col justify-between overflow-hidden group";
-        
-        card.innerHTML = `
-          <div>
-            <!-- Imagem e Badge -->
-            <div class="h-32 sm:h-36 overflow-hidden relative bg-slate-100">
-              <img src="${p.img}" alt="${p.name}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-              <span class="absolute top-2 left-2 bg-red-600 text-white text-[10px] font-extrabold px-2 py-0.5 rounded shadow">
-                ${p.badge}
-              </span>
-            </div>
-
-            <!-- Dados do Produto -->
-            <div class="p-3 sm:p-4">
-              <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-1">
-                ${p.unit}
-              </span>
-              <h4 class="font-bold text-slate-900 text-xs sm:text-sm line-clamp-2 leading-snug">
-                ${p.name}
-              </h4>
-
-              <!-- Preços -->
-              <div class="mt-2.5 pt-2 border-t border-slate-100">
-                <span class="text-[11px] text-slate-400 line-through block">
-                  De R$ ${p.priceOld.toFixed(2).replace('.', ',')}
-                </span>
-                <div class="flex items-baseline gap-1">
-                  <span class="text-xs font-bold text-emerald-700">R$</span>
-                  <span class="font-heading font-black text-lg sm:text-xl text-emerald-700 price-tag">
-                    ${p.price.toFixed(2).replace('.', ',')}
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Botão Adicionar -->
-          <div class="p-3 sm:p-4 pt-0">
-            <button onclick="addToCart(${p.id})" class="w-full py-2 px-3 rounded-xl text-xs font-bold transition flex items-center justify-center gap-1.5 ${inCart ? 'bg-emerald-100 text-emerald-800' : 'bg-brand-navy hover:bg-slate-900 text-white shadow-sm'}">
-              <i data-lucide="${inCart ? 'check' : 'plus'}" class="w-3.5 h-3.5"></i>
-              <span>${inCart ? 'Adicionado (' + inCart.qty + ')' : '+ Adicionar à Lista'}</span>
-            </button>
-          </div>
-        `;
-        grid.appendChild(card);
-      });
-
-      lucide.createIcons();
-    }
-
-    // FILTRO DE CATEGORIAS
-    function setCategory(cat, btn) {
-      currentCategory = cat;
-      document.querySelectorAll('.cat-chip').forEach(b => {
-        b.className = "cat-chip px-4 py-2 rounded-xl bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition whitespace-nowrap";
-      });
-      btn.className = "cat-chip active px-4 py-2 rounded-xl bg-brand-navy text-white shadow-sm transition whitespace-nowrap";
-      renderProducts();
-    }
-
-    // BUSCA
-    function filterProducts() {
-      searchQuery = document.getElementById('searchInput').value;
-      renderProducts();
-    }
-
-    // ADICIONAR ITEM AO CARRINHO
-    function addToCart(productId) {
-      const prod = PRODUCTS.find(p => p.id === productId);
-      if (!prod) return;
-
-      const existing = cart.find(item => item.id === productId);
-      if (existing) {
-        existing.qty += 1;
-      } else {
-        cart.push({
-          id: prod.id,
-          name: prod.name,
-          unit: prod.unit,
-          price: prod.price,
-          qty: 1,
-          custom: false
-        });
-      }
-
-      updateCartUI();
-      renderProducts();
-    }
-
-    // ADICIONAR ITEM PERSONALIZADO / AVULSO
-    function addCustomItem() {
-      const input = document.getElementById('customItemInput');
-      const val = input.value.trim();
-      if (!val) return;
-
-      cart.push({
-        id: Date.now(),
-        name: val,
-        unit: 'Item avulso',
-        price: 0,
-        qty: 1,
-        custom: true
-      });
-
-      input.value = '';
-      updateCartUI();
-    }
-
-    // ALTERAR QUANTIDADE
-    function changeQty(id, delta) {
-      const item = cart.find(i => i.id === id);
-      if (!item) return;
-
-      item.qty += delta;
-      if (item.qty <= 0) {
-        cart = cart.filter(i => i.id !== id);
-      }
-
-      updateCartUI();
-      renderProducts();
-    }
-
-    // LIMPAR CARRINHO
-    function clearCart() {
-      cart = [];
-      updateCartUI();
-      renderProducts();
-    }
-
-    // ATUALIZAR UI DO CARRINHO
-    function updateCartUI() {
-      const totalItems = cart.reduce((acc, i) => acc + i.qty, 0);
-      const totalPrice = cart.reduce((acc, i) => acc + (i.price * i.qty), 0);
-
-      // Header Count
-      document.getElementById('headerCartCount').textContent = totalItems;
-
-      // Floating Bar
-      const floatingBar = document.getElementById('floatingCartBar');
-      const floatingBadge = document.getElementById('floatingCartBadge');
-      const floatingText = document.getElementById('floatingCartItemsText');
-      const floatingTotal = document.getElementById('floatingCartTotal');
-
-      if (totalItems > 0) {
-        floatingBar.classList.remove('translate-y-full');
-        floatingBadge.textContent = totalItems;
-        floatingText.textContent = `${totalItems} ${totalItems === 1 ? 'item' : 'itens'} na sua lista`;
-        floatingTotal.textContent = `R$ ${totalPrice.toFixed(2).replace('.', ',')}`;
-      } else {
-        floatingBar.classList.add('translate-y-full');
-      }
-
-      // Drawer Total
-      document.getElementById('drawerTotal').textContent = `R$ ${totalPrice.toFixed(2).replace('.', ',')}`;
-
-      // Drawer Items List
-      const listContainer = document.getElementById('cartItemsList');
-      const emptyMsg = document.getElementById('emptyCartMessage');
-
-      if (cart.length === 0) {
-        listContainer.innerHTML = '';
-        listContainer.appendChild(emptyMsg);
-        emptyMsg.classList.remove('hidden');
-      } else {
-        emptyMsg.classList.add('hidden');
-        listContainer.innerHTML = '';
-
-        cart.forEach(item => {
-          const itemEl = document.createElement('div');
-          itemEl.className = "flex items-center justify-between p-3 rounded-xl border border-slate-200 bg-white shadow-sm";
-          
-          itemEl.innerHTML = `
-            <div class="flex-1 pr-3">
-              <h5 class="font-bold text-xs text-slate-800 leading-tight">${item.name}</h5>
-              <p class="text-[11px] text-slate-400">${item.custom ? 'Item avulso' : 'R$ ' + item.price.toFixed(2).replace('.', ',') + ' cada'}</p>
-            </div>
-
-            <div class="flex items-center gap-2">
-              <button onclick="changeQty(${item.id}, -1)" class="w-7 h-7 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold flex items-center justify-center text-xs">
-                -
-              </button>
-              <span class="w-6 text-center text-xs font-bold text-slate-800">${item.qty}</span>
-              <button onclick="changeQty(${item.id}, 1)" class="w-7 h-7 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold flex items-center justify-center text-xs">
-                +
-              </button>
-            </div>
-          `;
-          listContainer.appendChild(itemEl);
-        });
-      }
-
-      lucide.createIcons();
-    }
-
-    // ABRIR / FECHAR DRAWER DO CARRINHO
-    function toggleCartDrawer() {
-      const drawer = document.getElementById('cartDrawer');
-      const backdrop = document.getElementById('cartDrawerBackdrop');
-
-      const isOpen = !drawer.classList.contains('translate-x-full');
-
-      if (isOpen) {
-        drawer.classList.add('translate-x-full');
-        backdrop.classList.add('opacity-0', 'pointer-events-none');
-        backdrop.classList.remove('opacity-100', 'pointer-events-auto');
-      } else {
-        drawer.classList.remove('translate-x-full');
-        backdrop.classList.remove('opacity-0', 'pointer-events-none');
-        backdrop.classList.add('opacity-100', 'pointer-events-auto');
-      }
-    }
-
-    // ENVIAR LISTA PRO WHATSAPP DO SUPERMERCADO
-    function sendOrderToWhatsApp() {
-      if (cart.length === 0) {
-        alert('Sua lista está vazia! Adicione alguns produtos antes de enviar.');
-        return;
-      }
-
-      const totalPrice = cart.reduce((acc, i) => acc + (i.price * i.qty), 0);
-      
-      let msg = `🛒 *MINHA LISTA DE COMPRAS — PORTAL DO VALE SUPERMERCADO*\n`;
-      msg += `📍 Endereço: Av. Bernardo Sayão, 2164 - Milena I\n`;
-      msg += `-----------------------------------------\n`;
-
-      cart.forEach((item, index) => {
-        if (item.custom) {
-          msg += `${index + 1}. *${item.name}* (Qtd: ${item.qty})\n`;
-        } else {
-          const sub = (item.price * item.qty).toFixed(2).replace('.', ',');
-          msg += `${index + 1}. *${item.name}*\n   Qtd: ${item.qty} | Subtotal: R$ ${sub}\n`;
-        }
-      });
-
-      msg += `-----------------------------------------\n`;
-      msg += `💰 *Subtotal Estimado das Ofertas:* R$ ${totalPrice.toFixed(2).replace('.', ',')}\n\n`;
-      msg += `Olá! Montei essa lista no encarte do site do Portal do Vale. Vocês podem separar para eu retirar ou verificar a entrega?`;
-
-      const encoded = encodeURIComponent(msg);
-      const url = `https://wa.me/5563992121214?text=${encoded}`;
-      window.open(url, '_blank');
-    }
+    lucide.createIcons();
   </script>
 
 </body>
